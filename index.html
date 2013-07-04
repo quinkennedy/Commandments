@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="vendor/reset.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="vendor/tween.min.js"></script>
+    <script src="vendor/handlebars.js"></script>
+    <script id="receipt-template" type="text/x-handlebars-template">
+        <div id='receipt' class='receipt'>
+          <div class='receipt_image'></div>
+          <div class='receipt_text'>
+            <div class="left_text_wrap" style="width: 10;"></div>
+            <div class="right_text_wrap" style="width: 12;"></div>
+            <div class="left_text_wrap" style="width: 13;"></div>
+            <div class="right_text_wrap" style="width: 10;"></div>
+            <div class="left_text_wrap" style="width: 12;"></div>
+            <div class="right_text_wrap" style="width: 11;"></div>
+            <div class="left_text_wrap" style="width: 10;"></div>
+            <div class="right_text_wrap" style="width: 14;"></div>
+            <div class="left_text_wrap" style="width: 7;"></div>
+            <div class="right_text_wrap" style="width: 19;"></div>
+            <p>{{{text}}}</p>
+          </div>
+        </div>
+    </script>
+    <script id="receipt-template-2" type="text/x-handlebars-template">
+        <div id='receipt' class='receipt'>
+          <div class='receipt_image flipped'></div>
+          <div class='receipt_text'>
+            <div class="left_text_wrap" style="width: 15;"></div>
+            <div class="right_text_wrap" style="width: 10;"></div>
+            <div class="left_text_wrap" style="width: 9;"></div>
+            <div class="right_text_wrap" style="width: 12;"></div>
+            <div class="left_text_wrap" style="width: 8;"></div>
+            <div class="right_text_wrap" style="width: 11;"></div>
+            <div class="left_text_wrap" style="width: 12;"></div>
+            <div class="right_text_wrap" style="width: 10;"></div>
+            <div class="left_text_wrap" style="width: 17;"></div>
+            <div class="right_text_wrap" style="width: 6;"></div>
+            <p>{{{text}}}</p>
+          </div>
+        </div>
+    </script>
+    <script src='main.js'></script>
+  </head>
+  <body>
+    <div id='wrapper'>
+      <div id='printer_bottom' class='printer'></div>
+      <div id='printer_top'>
+        <div class='printer'></div>
+      </div>
+      <div id='receipt_fall_handle'>
+        <div id='receipt_container' class='centerer'>
+        </div>
+      </div>
+      <div id='copy_placeholder'></div>
+      <div id='footer'><div id='receipt_anchor' class='centerer'></div></div>
+    </div>
+  </body>
+</html>

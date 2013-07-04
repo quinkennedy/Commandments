@@ -1,0 +1,113 @@
+body{
+  background-color:grey;
+}
+
+#wrapper{
+  overflow:hidden;
+}
+
+.flipped{
+  -webkit-transform:rotate(180deg);
+  transform:rotate(180deg);
+}
+
+.copy{
+  opacity:0;
+  position:absolute;
+  z-index:3;
+  font-size:2em;
+  font-weight:bold;
+  margin-top:-1em;
+  margin-right:1em;
+  max-width:20em;
+  margin-left:1em;
+  background-color:rgba(0,0,0,.2);
+  padding:5px;
+}
+
+#printer_top{
+  position:absolute;
+  width:100%;
+  top:0;
+  height:1.25em;
+  overflow:hidden;
+  z-index:2;
+}
+
+.printer{
+  background:url("img/thermalprinter_breadboard.svg");
+  background-size:cover;
+  background-position-y:bottom;
+  width:28em;
+  height:3.8em;
+  margin-left:auto;
+  margin-right:auto;
+  left:-1.4em;
+  z-index:0;
+  position:relative;
+}
+
+#receipt_fall_handle{
+  z-index:1;
+  position:absolute;
+  top:-100px;
+  width:100%;
+}
+
+.centerer{
+  margin-left:auto;
+  margin-right:auto;
+  width:1px;
+  position:relative;
+}
+
+.receipt{
+  width:15em;
+  height:6em;
+  margin-left:-7.5em;
+  position:absolute;
+}
+
+.receipt_image{
+  background:url("img/short_receipt_print.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+  position:absolute;
+  width:100%;
+  height:100%;
+  filter:drop-shadow(2px 2px 5px rgba(0, 0, 0, .3));
+  -webkit-filter:drop-shadow(2px 2px 5px rgba(0, 0, 0, .3));
+}
+
+.left_text_wrap{
+  float:left;
+  clear:left;
+  height:1em;
+}
+
+.right_text_wrap{
+  float:right;
+  height:1em;
+}
+
+.receipt_text{
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  padding-top:1em;
+}
+
+.title{
+  text-align:center;
+  font-size:1.5em;
+  padding-top:.8em;
+  font-weight:bold;
+}
+
+#footer{
+  position:absolute;
+  width:100%;
+  height:400px;
+  overflow:hidden;
+}
