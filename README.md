@@ -1,6 +1,8 @@
 #Commandments
 **by Quin Kennedy**, created initially during [_Art Hack Day - God Mode_](http://arthackday.net/god_mode/) at 319 Scholes
 
+![](documentation/level.jpg)![](documentation/tweet.jpg)![](documentation/steal.jpg)![](documentation/guys.jpg)
+
 ##Setup
 1. Startup a local Spacebrew server
 2. Startup a local Persistent Admin using the persistent_config.json from this repository.
@@ -15,9 +17,13 @@
 6. Upload spacebrew_print_and_cut to an arduino with a receipt printer, servo, and Ethernet shield. The servo is used to actuate a pair of scissors that cut off the printed commandment.
     * You will need the [Adafruit Thermal Printer Library](https://github.com/quinkennedy/Adafruit-Thermal-Printer-Library), the [Spacebrew Arduino Library](https://github.com/labatrockwell/spacebrew-arduino-library), and the [Arduino Websocket Client Library](https://github.com/labatrockwell/ArduinoWebsocketClient)
 
+![](documentation/start.jpg)![](documentation/scooterer.jpg)![](documentation/cookies.jpg)![](documentation/speak.jpg)
+
 ##Troubleshooting
 * Try changing the mac address `mac` that is hardcoded in the Arduino sketch. If two devices have the same mac address, usually only one will receive network traffic
 * Try changing the name of the Spacebrew client configured in the Arduino sketch. You could also try changing the names of the various other Spacebrew clients. Only one client with a given name will be recognized by the Spacebrew server at a time.
     * If you change the names, you will need to update the Persistent Admin settings to use the new names.
 * Sometimes the receipt paper will get stuck in the printer, you just need to tug it to get it moving again
 * If the printer is mounted with the paper sticking out straight down (or close to it) the paper may jam in a more catastrophic way. This seems to be more likely if you are near the end of a role. You can mitigate this by mounting the printer with the paper pointing out the side. (more-or-less)
+
+![](documentation/lint.jpg)
