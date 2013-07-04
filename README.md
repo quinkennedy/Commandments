@@ -1,6 +1,5 @@
-#Commandments 
-###by Quin Kennedy
-created initially for Art Hack Day - God Mode at 319 Scholes
+#Commandments
+**by Quin Kennedy**, created initially during [_Art Hack Day - God Mode_](http://arthackday.net/god_mode/) at 319 Scholes
 
 ##Setup
 1. Startup a local Spacebrew server
