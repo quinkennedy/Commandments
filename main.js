@@ -16,11 +16,18 @@ var COMMANDMENTS = [
   "COMMANDMENT V Thou Shalt Watch Gill Live On."
 ];
 var COPY = [
+  "Commandments is an installation piece that collects commandments from twitter",
+  "These tweets are printed on a receipt printer mounted on the ceiling",
+  "And delivered to the audience below."
+];
+/*
+var COPY = [
   "Commandments is an installation piece that delivers commandments from above.",
   "It scrapes twitter for posts that instruct people how to act, and periodically delivers those instructions.",
   "The commandments are dropped from the heavens on consumer receipt paper.",
   "The diluge never stops as people are always ready to tell others how to live their lives."
 ];
+*/
 var windowHeight, docHeight;
 var timeAnimate = true;
 var toSetupScrollControl = false;
@@ -148,7 +155,7 @@ var setPositions = function(){
     itemHeight = currElem.offsetHeight;
     currHeight += windowHeight/2;
   }
-  docHeight = currHeight - windowHeight/2 + itemHeight;// = document.body.scrollHeight;//document.height was not returning the correct value
+  docHeight = currHeight + itemHeight;//currHeight - windowHeight/2 + itemHeight;// = document.body.scrollHeight;//document.height was not returning the correct value
   document.getElementById("wrapper").style.height = ""+docHeight+"px";
   document.getElementById("footer").style.top = ""+(docHeight - footerHeight)+"px";
   setFallDestination();

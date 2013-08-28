@@ -23,6 +23,10 @@ body{
   margin-left:1em;
   background-color:rgba(0,0,0,.2);
   padding:5px;
+  color:grey;
+  font-family:sans-serif;
+  font-weight:lighter;
+  font-style:normal;
 }
 
 #printer_top{
@@ -96,13 +100,14 @@ body{
   height:100%;
   overflow:hidden;
   padding-top:1em;
+  font-family:monospace;
 }
 
 .title{
   text-align:center;
-  font-size:1.5em;
-  padding-top:.8em;
-  font-weight:bold;
+  padding-top:2.2em;
+  /*font-size:1.5em;
+  font-weight:bold;*/
 }
 
 #footer{
