@@ -39,7 +39,7 @@ body{
 }
 
 .printer{
-  background:url("img/thermalprinter_breadboard.svg");
+  background:url("img/thermalprinter_breadboard.svg") no-repeat scroll 0% 100% / cover transparent;
   background-size:cover;
   background-position-y:bottom;
   width:28em;

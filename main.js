@@ -1,3 +1,4 @@
+requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame;
 
 var COMMANDMENTS = [
   "COMMANDMENT CL Thou Shalt Not Have Been There From The Start.",
@@ -126,6 +127,7 @@ var setupScrollControl = function(){
       var offset = Math.sin(value*repeats*2*Math.PI);
       receipt.style.marginLeft = "" + (-7.5 + offset*3 + fallTracker.lValue) +"em";
       receipt.style.webkitTransform = "rotate("+(-offset*25)+"deg)";
+      receipt.style.transform = receipt.style.webkitTransform;
     })
     .delay(firstPrint ? 0 : 1000)
     .start(firstPrint ? 0 : undefined);
